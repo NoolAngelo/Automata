@@ -60,3 +60,23 @@ fsm.set_initial_state("S0")
 inputs = ['a', 'b', 'a', 'b']
 for inp in inputs:
     fsm.transition(inp)
+    
+
+"""State class: This represents a state in the finite state machine. Each state has a name and a dictionary transitions that maps input symbols to the next state.
+
+add_transition: This method adds a transition to the state. It takes an input symbol and the next state as arguments.
+
+get_next_state: This method returns the next state based on the input symbol provided.
+
+FiniteStateMachine class: This represents the finite state machine itself. It maintains a collection of states and keeps track of the current state.
+
+add_state: This method adds a state to the finite state machine.
+
+set_initial_state: This method sets the initial state of the finite state machine.
+
+transition: This method performs a transition based on the input symbol provided. It checks if the current state exists, finds the next state based on the input symbol, and updates the current state accordingly.
+
+Example usage: This section demonstrates how to define states, add transitions between them, create a finite state machine, set the initial state, and perform transitions based on a sequence of input symbols.
+
+In the provided example, three states S0, S1, and S2 are defined, with transitions between them based on input symbols 'a' and 'b'. The initial state is set to S0, and a sequence of inputs ['a', 'b', 'a', 'b'] is used to perform transitions. The output of the transitions is printed, indicating the current state after each transition.
+        """
